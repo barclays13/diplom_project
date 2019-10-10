@@ -70,7 +70,6 @@ const sendForm = () => {
                 return;
             }
         }
-        statusMessage.textContent = loadMessage;
         const target = event.target;
         const formData = new FormData(footerForm);
         let body = {};
@@ -80,8 +79,6 @@ const sendForm = () => {
     
         postData(body)
             .then(()=> {
-
-                statusMessage.textContent = successMessasge;
                 thanks.style.display = 'block';
                 const formInput = footerForm.querySelectorAll('input').forEach((footerForm)=> footerForm.value = '');
             })
