@@ -7,7 +7,6 @@ import mainSlider from './modules/mainSlider';
 import scrollDocument from './modules/scrollDocument';
 import popupMenu from './modules/popupMenu';
 import sliderGallery from './modules/sliderGallery';
-//import calc from './modules/calc';
 import servicesSlider from './modules/servicesSlider';
 
 
@@ -15,7 +14,6 @@ import servicesSlider from './modules/servicesSlider';
 head();
 popupMenu();
 scrollDocument();
-//calc();
 //отправка данных
 sendForm();
 validationForms();
