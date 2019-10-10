@@ -35,7 +35,6 @@ const servicesSlider = () => {
     };
 
     const prevSlide = () => {
-        console.log('prev');
         if ( firstElement === 0 ){
             firstElement = 9;
         } else {

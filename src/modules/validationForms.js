@@ -8,11 +8,8 @@ const validationForms = () => {
     document.getElementsByName('phone').forEach((element) => {
         element.addEventListener('input', () => {
             element.value = element.value.replace(/[^0-9+]/, '');
-
         });
     });
-    
-
 };
 export default validationForms;
 

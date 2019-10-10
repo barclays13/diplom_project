@@ -11,7 +11,8 @@ const sendForm = () => {
     footerForm = document.querySelector('#footer_form'),
     clubsFooter = document.querySelectorAll('.choose-club>.club>input'),
     cardOrder = document.querySelector('#card_order'),
-    cardCheck = document.querySelector('#card_check');
+    cardCheck = document.querySelector('#card_check'),
+    priceTotal = document.getElementById('price-total');
 
 
     //cardForm
@@ -39,6 +40,9 @@ const sendForm = () => {
         formData.forEach((val, key) => {
             body[key] = val;
         });
+        if(priceTotal){
+            body.Price = priceTotal.textContent;
+        }
 
         postData(body)
             .then(()=> {
