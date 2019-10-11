@@ -2,7 +2,7 @@
 
 import head from './modules/head';
 import validationForms from './modules/validationForms';
-import sendForm from './modules/sendForm';
+import sendForms from './modules/sendForms';
 import mainSlider from './modules/mainSlider';
 import scrollDocument from './modules/scrollDocument';
 import popupMenu from './modules/popupMenu';
@@ -15,7 +15,7 @@ head();
 popupMenu();
 scrollDocument();
 //отправка данных
-sendForm();
+sendForms();
 validationForms();
 servicesSlider();
 sliderGallery();
