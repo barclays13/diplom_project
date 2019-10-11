@@ -10,17 +10,18 @@ const head = () => {
     
     document.addEventListener("click", (event) => {
         const target = event.target;
-        if (target.classList.contains('close_icon') || target.classList.contains('overlay') || target.classList.contains('close-btn')){ 
+        if (target.classList.contains('close_icon') || target.classList.contains('overlay') ||
+         target.classList.contains('close-btn')){ 
             popup.forEach( (elem) => {
                 elem.style.display = "none";
             });
         }
-        if(target.matches('.clubs-list>p')){
+        if (target.matches('.clubs-list>p')){
             if (nameClubs.hasAttribute("style") ){
                 nameClubs.removeAttribute("style");
                 return;
             } 
-            if (nameClubs.style.display = "none" ) {
+            if (nameClubs.style.display = "none"){
                 nameClubs.style.display = "block";
             }
         }

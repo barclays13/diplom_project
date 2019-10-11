@@ -24,7 +24,8 @@ const sendForm = () => {
 
         if( !cardCheck.checked){
 
-            if ( statusMessage.previousSibling.textContent == 'Необходимо подвердить согласие!' || statusMessage.previousSibling.name == 'check'){
+            if ( statusMessage.previousSibling.textContent == 'Необходимо подвердить согласие!' ||
+             statusMessage.previousSibling.name == 'check'){
                 statusMessage.name = 'check';
                 return;
             } else {
@@ -65,7 +66,8 @@ const sendForm = () => {
 
         if (!clubsFooter[0].checked && !clubsFooter[1].checked){
             statusMessage.style.cssText = 'color:red; font-size: 1rem';
-            if ( statusMessage.previousSibling.textContent == 'Необходимо выбрать клуб!' || statusMessage.previousSibling.name == 'checkbox'){
+            if ( statusMessage.previousSibling.textContent == 'Необходимо выбрать клуб!' ||
+             statusMessage.previousSibling.name == 'checkbox'){
                 statusMessage.name = 'checkbox';
                 return;
             } else {
@@ -103,7 +105,8 @@ const sendForm = () => {
 
         if( !checkBannerForm.checked){
             statusMessage.style.cssText = 'color:red; font-size: 1rem';
-            if ( statusMessage.previousSibling.textContent == 'Необходимо подвердить согласие!' || statusMessage.previousSibling.name == 'checkbox'){
+            if ( statusMessage.previousSibling.textContent == 'Необходимо подвердить согласие!' ||
+             statusMessage.previousSibling.name == 'checkbox'){
                 statusMessage.name = 'checkbox';
                 return;
             } else {
