@@ -2,7 +2,6 @@
 
 import head from './modules/head';
 import validationForms from './modules/validationForms';
-//import sendForm from './modules/sendForm';
 import mainSlider from './modules/mainSlider';
 import scrollDocument from './modules/scrollDocument';
 import popupMenu from './modules/popupMenu';

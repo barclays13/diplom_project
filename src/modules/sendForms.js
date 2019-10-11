@@ -31,12 +31,13 @@ const sendForms = () => {
                     statusMessage.name = 'check';
                     return;
                 } else {
-                    statusMessage.style.cssText = 'color:red; font-size: 1rem';
+                    statusMessage.style.cssText = 'color:red; font-size: 2rem; position: absolute;left: 50%';
                     statusMessage.textContent = consentMessage;
                     statusMessage.name = 'check';
                     return;
                 }
             }
+                statusMessage.style.cssText = 'color:black; font-size: 2rem; position: absolute;left: 50%';
                 statusMessage.textContent = loadMessage;
                 const formData = new FormData(cardOrder);
 
@@ -50,6 +51,7 @@ const sendForms = () => {
 
                 postData(body)
                 .then(()=> {
+
                     statusMessage.textContent = successMessasge;
                     const formInput = cardOrder.querySelectorAll('input').forEach((cardOrder)=> cardOrder.value = '');
                 })
